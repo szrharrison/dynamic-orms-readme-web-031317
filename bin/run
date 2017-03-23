@@ -9,4 +9,6 @@ puts "song name: " + song.name
 puts "song album: " + song.album
 song.save
 
+binding.pry
+
 DB[:conn].execute("SELECT * FROM songs")
